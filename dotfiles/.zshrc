@@ -13,5 +13,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 # Lines added by User
+# Keybinds
 bindkey -a '^[[3~' vi-delete-char
 bindkey '^[[3~' delete-char
+# Display current working directory
+export PS1="%d%:~$" 
+# Aliases
+alias ll="ls -lha"
